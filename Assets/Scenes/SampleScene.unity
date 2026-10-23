@@ -324,12 +324,13 @@ GameObject:
   - component: {fileID: 604593085}
   - component: {fileID: 604593084}
   - component: {fileID: 604593083}
+  - component: {fileID: 604593088}
   - component: {fileID: 604593082}
   - component: {fileID: 604593086}
   - component: {fileID: 604593087}
   m_Layer: 0
   m_Name: Capsule
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -515,6 +516,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5ae71035fb61e2e4eaae2a41c793d007, type: 3}
   m_Name: 
   m_EditorClassIdentifier: '::'
+--- !u!114 &604593088
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 604593081}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 96b471ebbcde42d1a4d581e03844c15b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerController
+  Speed: 5
+  jumpSpeed: 5
 --- !u!1 &619394800
 GameObject:
   m_ObjectHideFlags: 0
@@ -770,6 +785,10 @@ PrefabInstance:
     - target: {fileID: 2240010298139967757, guid: 8eaa3a64a1d5f4e9594199785bc0103b, type: 3}
       propertyPath: m_Name
       value: PauseManager
+      objectReference: {fileID: 0}
+    - target: {fileID: 5270190881348766349, guid: 8eaa3a64a1d5f4e9594199785bc0103b, type: 3}
+      propertyPath: m_Color.a
+      value: 0.5647059
       objectReference: {fileID: 0}
     - target: {fileID: 6629298209694864749, guid: 8eaa3a64a1d5f4e9594199785bc0103b, type: 3}
       propertyPath: m_LocalPosition.x
